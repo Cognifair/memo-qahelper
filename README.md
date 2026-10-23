@@ -29,14 +29,16 @@
 来源：据墨墨百科（官方） / 据论坛用户反馈（非官方）
 ```
 
-## 分工
+产品使用与设置问题走本技能；制卡内容走 `memo-cardest`，OCR 走 `memo-mineruocr`，TXT 容器走 `memo-txtimporter`，表格渲染走 `memo-table`。细节见 [references/sources.md](references/sources.md)。
 
-| 问题 | 走哪 |
+## Memo 系列
+
+<!-- memo-series:begin -->
+| 技能 | 职责 |
 |---|---|
-| 产品使用、设置、同步、导入导出、会员、API | 本技能 |
-| 制卡内容、题型、卡片语法 | `memo-cardest` |
-| 扫描件 / OCR | `memo-mineruocr` |
-| TXT 容器格式 | `memo-txtimporter` |
-| 表格渲染 | `memo-table` |
-
-细节见 [references/sources.md](references/sources.md)。
+| [墨卡大师 Memo-Cardest](https://github.com/Cognifair/memo-cardest) | 核心制卡：知识拆解、题型、正文语法与牌组操作 |
+| [Memo-MinerUOCR](https://github.com/Cognifair/memo-mineruocr) | 扫描件与大 PDF 识别、拆分并合并 Markdown |
+| [墨记表格制作 Memo-Table](https://github.com/Cognifair/memo-table) | 表格图片与 LaTeX array 表格渲染 |
+| [墨记文档导入 Memo-Txtimporter](https://github.com/Cognifair/memo-txtimporter) | TXT 容器格式、分卡校验与图片回填 |
+| [迁墨 Memo-Ankitransfer](https://github.com/Cognifair/memo-ankitransfer) | Anki 图片挖空转墨墨原生遮罩 |
+<!-- memo-series:end -->
