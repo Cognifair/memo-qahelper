@@ -42,3 +42,7 @@
 | [墨记文档导入 Memo-Txtimporter](https://github.com/Cognifair/memo-txtimporter) | TXT 容器格式、分卡校验与图片回填 |
 | [迁墨 Memo-Ankitransfer](https://github.com/Cognifair/memo-ankitransfer) | Anki 图片挖空转墨墨原生遮罩 |
 <!-- memo-series:end -->
+
+## License
+
+[MIT](LICENSE)

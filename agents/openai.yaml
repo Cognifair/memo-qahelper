@@ -1,4 +1,4 @@
 interface:
-  display_name: "Memo-QAhelper v1.0.1"
+  display_name: "Memo-QAhelper v1.0.2"
   short_description: "墨墨记忆卡使用答疑：只查墨墨百科与墨记论坛，查不到就引导发邮件"
   default_prompt: "使用 $memo-qahelper 回答墨墨记忆卡的使用问题：先查 site:memodocs.maimemo.com（官方），未命中再查 site:markji.discourse.group（论坛用户反馈），都查不到就引导发邮件 support@markji.com；不引用其它来源，不凭记忆作答。"

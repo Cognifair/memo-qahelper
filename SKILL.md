@@ -2,10 +2,10 @@
 name: memo-qahelper
 description: Memo-QAhelper，墨墨记忆卡（Markji）的使用答疑技能。用户问产品功能怎么用、设置在哪、导入导出、同步、会员、API 等使用问题时使用。只允许检索墨墨百科（memodocs.maimemo.com）与墨记论坛（markji.discourse.group）两个站点；都查不到就引导发邮件 support@markji.com，不凭记忆或推测作答。不用于制卡内容、卡片语法、OCR 或表格制作（分别走 memo-cardest、memo-mineruocr、memo-table）。
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
-# Memo-QAhelper v1.0.1
+# Memo-QAhelper v1.0.2
 
 墨墨记忆卡（Markji）**使用答疑**技能。调用名 `$memo-qahelper`，展示名「Memo-QAhelper」。
 
