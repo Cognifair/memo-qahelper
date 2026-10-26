@@ -4,16 +4,19 @@
 
 ## 硬规则
 
-- 只允许两个来源：**墨墨百科**（`memodocs.maimemo.com`，官方）与**墨记论坛**（`markji.discourse.group`，用户反馈）。
+- 只允许三类来源：**墨墨百科**（`memodocs.maimemo.com`，官方）、**墨记论坛**（`markji.discourse.group`，用户反馈）、**本机同级的 Memo 系列技能说明**（与论坛同级，非官方，只读）。
 - 其它来源一律不引用；不凭模型记忆、不推测、不类比、不杜撰。
-- 两个站点都查不到 → 引导发邮件 `support@markji.com`，流程结束。
+- 三类来源都查不到 → 引导发邮件 `support@markji.com`，流程结束。
+- 不调用 Memo 技能，不触发它们的 S0/提问/写入/API。
 
-## 三档流程
+## 四档流程
 
 ```text
 ① site:memodocs.maimemo.com <关键词>   命中 → 据墨墨百科（官方）
         │ 未查到
 ② site:markji.discourse.group <关键词>  命中 → 据论坛用户反馈（非官方）
+        │ 未查到
+②b 读同级 ../memo-*/SKILL.md           命中 → 据 Memo 系列技能说明（非官方）
         │ 未查到
 ③ 引导发邮件 support@markji.com，结束
 ```

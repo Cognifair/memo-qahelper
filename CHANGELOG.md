@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.4 — 2026-10-26
+
+影响面：memo-qahelper(SKILL.md, references/sources.md)
+
+### 变更
+
+- 允许来源增加本机同级的 Memo 系列技能说明，与论坛同级（非官方）；只读文件，不调用技能、不触发 S0/写入/API。
+
 ## v1.0.3 — 2026-10-26
 
 影响面：memo-qahelper(SKILL.md, references/assets/import-flow-36b59d.gif)
