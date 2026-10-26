@@ -1,11 +1,11 @@
 ---
 name: memo-qahelper
-description: Memo-QAhelper，墨墨记忆卡（Markji）的使用答疑技能。用户问产品功能怎么用、设置在哪、导入导出、同步、会员、API 等使用问题时使用。只允许检索墨墨百科（memodocs.maimemo.com）与墨记论坛（markji.discourse.group）两个站点；都查不到就引导发邮件 support@markji.com，不凭记忆或推测作答。不用于制卡内容、卡片语法、OCR 或表格制作（分别走 memo-cardest、memo-mineruocr、memo-table）。
+description: Memo-QAhelper，墨墨记忆卡（Markji）的使用答疑技能。用户问产品功能怎么用、设置在哪、导入导出、同步、会员、API 等使用问题时使用。只允许检索墨墨百科（memodocs.maimemo.com）与墨记论坛（markji.discourse.group）两个站点；都查不到就引导发邮件 support@markji.com，不凭记忆或推测作答。问 TXT 导入步骤时直接给内置固定教程，不检索。不用于制卡内容、卡片语法、OCR 或表格制作（分别走 memo-cardest、memo-mineruocr、memo-table）。
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
-# Memo-QAhelper v1.0.2
+# Memo-QAhelper v1.0.3
 
 墨墨记忆卡（Markji）**使用答疑**技能。调用名 `$memo-qahelper`，展示名「Memo-QAhelper」。
 
@@ -20,9 +20,32 @@ metadata:
 
 ### 0. 先判定是不是使用问题
 
+- **问 TXT 导入**（「TXT 怎么导入」「从文本导入在哪」「批量制卡入口」）：直接走下方「固定答案：TXT 导入」，**不要检索**。
 - 是：功能怎么用、入口在哪、设置/同步/导入导出、会员、API、平台差异等 → 走下面的三档。
 - 不是：制卡内容、题型、卡片语法 → 交 `memo-cardest`；扫描件/OCR → `memo-mineruocr`；TXT 容器 → `memo-txtimporter`；表格 → `memo-table`。
 - 账号、支付、数据丢失、封禁等**只涉及个人账户**的问题：直接走第 ③ 档发邮件，不检索公开文档。
+
+### 固定答案：TXT 导入（不检索）
+
+用户问 TXT 导入步骤时，**直接发下面的教程，不要 web_search**。这是内置固定答案，不是外站资料；白名单规则不适用于这一步。
+
+```text
+## 导入教程
+
+导入方式（电脑版 Markji）：
+1. 打开制卡桌面，进入目标牌组
+2. 右上角「批量制卡」→「从文本导入」
+3. 粘贴 TXT，保持 ### / === / --- 默认，先看预览，再点「导入」
+
+![TXT 导入流程](<本技能目录>/references/assets/import-flow-36b59d.gif)
+
+单张卡片正文上限 5000 字符；整份牌组的 TXT 导入没有总量限制，可以一次导入。
+```
+
+- 只适用于 **TXT 文本导入**；问 CSV/表格导入、API 写入、Anki 迁移时，仍走对应技能或白名单检索。
+- 把 `<本技能目录>` 换成当前安装目录的绝对路径，再按普通 Markdown 粘贴；**不要包在代码块里**，否则 GIF 不会显示。
+- 客户端不能显示本地图片时，保留四步并给出 GIF 绝对路径。
+- 不要改写成“可能/一般来说”；按钮名和上限以这段为准。这一步不需要「依据/来源」格式。
 
 ### ① 墨墨百科（官方）
 

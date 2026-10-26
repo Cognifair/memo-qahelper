@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.3 — 2026-10-26
+
+影响面：memo-qahelper(SKILL.md, references/assets/import-flow-36b59d.gif)
+
+### 变更
+
+- 新增「TXT 导入」固定答案：用户问 TXT 导入步骤时直接发内置教程（四步 + GIF），不检索；白名单规则不适用于该固定答案。
+
 ## v1.0.2 — 2026-10-24
 
 ### 变更
@@ -11,12 +19,6 @@
 ## v1.0.1 — 2026-10-23
 
 - README 的「Memo 系列」表与 `references/satellites.md` 改由 `memo-series.json` 生成（`sync-series`）。
-
-## v1.0.2 — 2026-10-24
-
-### 变更
-
-- 新增 MIT `LICENSE`，README 补 License 说明。
 
 ## v1.0.0 — 2026-10-22
 
