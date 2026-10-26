@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.5 — 2026-10-26
+
+影响面：memo-qahelper(README.md) / skill-publisher(scripts/memo_publish.py, scripts/test_memo_release.py)
+
+### 修复
+
+- README 标题版本改为随 release 自动更新，修复 GitHub 页面标题停留在 v1.0.0 的问题。
+
 ## v1.0.4 — 2026-10-26
 
 影响面：memo-qahelper(SKILL.md, references/sources.md)
