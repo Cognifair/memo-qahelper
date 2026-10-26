@@ -2,10 +2,10 @@
 name: memo-qahelper
 description: Memo-QAhelper，墨墨记忆卡（Markji）的使用答疑技能。用户问产品功能怎么用、设置在哪、导入导出、同步、会员、API 等使用问题时使用。只允许检索墨墨百科（memodocs.maimemo.com）、墨记论坛（markji.discourse.group），以及本机同级的 Memo 系列技能说明（与论坛同级，非官方）；都查不到就引导发邮件 support@markji.com，不凭记忆或推测作答。问 TXT 导入步骤时直接给内置固定教程，不检索。不用于制卡内容、卡片语法、OCR 或表格制作（分别走 memo-cardest、memo-mineruocr、memo-table）。
 metadata:
-  version: "1.0.5"
+  version: "1.0.6"
 ---
 
-# Memo-QAhelper v1.0.5
+# Memo-QAhelper v1.0.6
 
 墨墨记忆卡（Markji）**使用答疑**技能。调用名 `$memo-qahelper`，展示名「Memo-QAhelper」。
 
@@ -31,7 +31,15 @@ metadata:
 
 ### 固定答案：TXT 导入（不检索）
 
-用户问 TXT 导入步骤时，**直接发下面的教程，不要 web_search**。这是内置固定答案，不是外站资料；白名单规则不适用于这一步。
+用户问 TXT 导入步骤时，**直接运行并原样粘贴下面的脚本输出，不要 web_search**：
+
+```text
+python -B scripts/import_guide.py
+```
+
+脚本会把 GIF 复制到当前工作区 `memo-txt-import.gif`，并打印四步教程 + `![TXT 导入流程](memo-txt-import.gif)`。**按普通 Markdown 粘贴，不要包在代码块里**；客户端只预览工作区内的图片，所以不要改成技能目录的绝对路径。
+
+输出模板：
 
 ```text
 ## 导入教程
@@ -41,14 +49,14 @@ metadata:
 2. 右上角「批量制卡」→「从文本导入」
 3. 粘贴 TXT，保持 ### / === / --- 默认，先看预览，再点「导入」
 
-![TXT 导入流程](<本技能目录>/references/assets/import-flow-36b59d.gif)
+![TXT 导入流程](memo-txt-import.gif)
 
 单张卡片正文上限 5000 字符；整份牌组的 TXT 导入没有总量限制，可以一次导入。
 ```
 
 - 只适用于 **TXT 文本导入**；问 CSV/表格导入、API 写入、Anki 迁移时，仍走对应技能或白名单检索。
-- 把 `<本技能目录>` 换成当前安装目录的绝对路径，再按普通 Markdown 粘贴；**不要包在代码块里**，否则 GIF 不会显示。
-- 客户端不能显示本地图片时，保留四步并给出 GIF 绝对路径。
+- 在**用户工作目录**运行脚本，不要 `cd` 到技能目录；否则 GIF 会落在技能目录，客户端无法预览。
+- 脚本不可用时，保留四步并给出 GIF 绝对路径；能打开 HTML 时用 `references/import-guide.html` 兜底。
 - 不要改写成“可能/一般来说”；按钮名和上限以这段为准。这一步不需要「依据/来源」格式。
 
 ### ① 墨墨百科（官方）

@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.6 — 2026-10-26
+
+影响面：memo-qahelper(SKILL.md, scripts/import_guide.py)
+
+### 修复
+
+- TXT 导入教程改为脚本把 GIF 复制到当前工作区并输出相对路径，修复 DSH / WorkBuddy 无法预览技能目录绝对路径的问题。
+
 ## v1.0.5 — 2026-10-26
 
 影响面：memo-qahelper(README.md) / skill-publisher(scripts/memo_publish.py, scripts/test_memo_release.py)
