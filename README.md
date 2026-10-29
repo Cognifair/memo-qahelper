@@ -1,4 +1,6 @@
-# Memo-QAhelper v1.0.6
+# Memo-QAhelper v1.0.7
+
+> 🌐 [墨卡大师 · 专业制卡工作流](https://moka-master.app.workbuddy.host/?sharecode=ZYHGDS4GEB)
 
 墨墨记忆卡（Markji）的**使用答疑**技能。回答产品功能、入口、设置、同步、导入导出、会员、API 等使用问题；不负责制卡内容、卡片语法、OCR 或表格。
 
