@@ -1,4 +1,4 @@
-# Memo-QAhelper v1.0.8
+# Memo-QAhelper v1.0.9
 
 > 🌐 [墨卡大师 · 专业制卡工作流](https://moka-master.app.workbuddy.host/?sharecode=ZYHGDS4GEB)
 

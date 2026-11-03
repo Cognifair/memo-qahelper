@@ -2,10 +2,10 @@
 name: memo-qahelper
 description: Memo-QAhelper，墨墨记忆卡（Markji）的使用答疑技能。用户问产品功能怎么用、设置在哪、导入导出、同步、会员、API 等使用问题时使用。只允许检索墨墨百科（memodocs.maimemo.com）、墨记论坛（markji.discourse.group），以及本机同级的 Memo 系列技能说明（与论坛同级，非官方）；都查不到就引导发邮件 support@markji.com，不凭记忆或推测作答。问 TXT 导入步骤时直接给内置固定教程，不检索。不用于制卡内容、卡片语法、OCR 或表格制作（分别走 memo-cardest、memo-mineruocr、memo-table）。
 metadata:
-  version: "1.0.8"
+  version: "1.0.9"
 ---
 
-# Memo-QAhelper v1.0.8
+# Memo-QAhelper v1.0.9
 
 墨墨记忆卡（Markji）**使用答疑**技能。调用名 `$memo-qahelper`，展示名「Memo-QAhelper」。
 
@@ -51,7 +51,7 @@ python -B scripts/import_guide.py
 
 ![TXT 导入流程](memo-txt-import.gif)
 
-单张卡片正文上限 5000 字符；整份牌组的 TXT 导入没有总量限制，可以一次导入。
+平台单卡正文上限：专业版 5000 / 非专业版 2000 字符；建议控制在 4500 / 1800 字符内。整份牌组的 TXT 导入没有总量限制，可以一次导入。
 ```
 
 - 只适用于 **TXT 文本导入**；问 CSV/表格导入、API 写入、Anki 迁移时，仍走对应技能或白名单检索。

@@ -2,6 +2,15 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.9 — 2026-11-03
+
+影响面：memo-qahelper(SKILL.md, CHANGELOG.md, scripts/import_guide.py)
+
+### 修正
+
+- TXT 导入固定教程更新为平台新上限：专业版单卡 5000、非专业版 2000 字符；建议控制在 4500 / 1800 内。
+- 保留整份牌组 TXT 导入没有总量限制的说明。
+
 ## v1.0.8 — 2026-10-30
 
 影响面：memo-qahelper(README.md, references/satellites.md)
