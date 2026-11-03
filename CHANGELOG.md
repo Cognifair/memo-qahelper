@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.10 — 2026-11-03
+
+影响面：memo-qahelper(SKILL.md, README.md, CHANGELOG.md, references/sources.md, references/satellites.md)
+
+### 变更
+
+- MEMO-QAHELPER: 表格支链统一指向墨兰迪 Memo-Canvas。
+
 ## v1.0.9 — 2026-11-03
 
 影响面：memo-qahelper(SKILL.md, CHANGELOG.md, scripts/import_guide.py)

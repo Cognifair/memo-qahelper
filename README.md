@@ -1,4 +1,4 @@
-# Memo-QAhelper v1.0.9
+# Memo-QAhelper v1.0.10
 
 > 🌐 [墨卡大师 · 专业制卡工作流](https://moka-master.app.workbuddy.host/?sharecode=ZYHGDS4GEB)
 
@@ -44,7 +44,7 @@
 来源：据墨墨百科（官方） / 据论坛用户反馈（非官方）
 ```
 
-产品使用与设置问题走本技能；制卡内容走 `memo-cardest`，OCR 走 `memo-mineruocr`，TXT 容器走 `memo-txtimporter`，表格渲染走 `memo-table`。细节见 [references/sources.md](references/sources.md)。
+产品使用与设置问题走本技能；制卡内容走 `memo-cardest`，OCR 走 `memo-mineruocr`，TXT 容器走 `memo-txtimporter`，表格渲染走 `memo-canvas`。细节见 [references/sources.md](references/sources.md)。
 
 ## Memo 系列
 
@@ -53,7 +53,7 @@
 |---|---|
 | [墨卡大师 Memo-Cardest](https://github.com/Cognifair/memo-cardest) | 核心制卡：知识拆解、题型、正文语法与牌组操作 |
 | [Memo-MinerUOCR](https://github.com/Cognifair/memo-mineruocr) | 扫描件与大 PDF 识别、拆分并合并 Markdown |
-| [墨记表格制作 Memo-Table](https://github.com/Cognifair/memo-table) | 表格图片与 LaTeX array 表格渲染 |
+| [墨兰迪 Memo-Canvas](https://github.com/Cognifair/memo-canvas) | 表格图片与 LaTeX array 表格制作，扫描图像高清化与忠实重绘 |
 | [墨记文档导入 Memo-Txtimporter](https://github.com/Cognifair/memo-txtimporter) | TXT 容器格式、分卡校验与图片回填 |
 | [迁墨 Memo-Ankitransfer](https://github.com/Cognifair/memo-ankitransfer) | Anki 图片挖空转墨墨原生遮罩 |
 | [卡跳跳 Memo-CardLink](https://github.com/Cognifair/memo-cardlink) | 卡片单向跳转、双向互链与 Card 引用审计（原 Memo-Link） |
