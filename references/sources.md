@@ -18,10 +18,10 @@
 | 技能 | 覆盖 |
 |---|---|
 | `memo-cardest` | 制卡流程、路线选择、卡片语法与交付 |
-| `memo-txtimporter` | TXT 容器、结构校验、图片回填 |
+| `memo-txt` | TXT 容器、结构校验、图片回填 |
 | `memo-canvas` | 表格样式、PNG / LaTeX 输出 |
 | `memo-mineruocr` | OCR、大 PDF 拆分与合并 |
-| `memo-ankitransfer` | Anki 图片挖空迁移 |
+| `memo-ankigo` | Anki 图片挖空迁移 |
 
 规则：
 

@@ -2,10 +2,10 @@
 name: memo-qahelper
 description: Memo-QAhelper，墨墨记忆卡（Markji）的使用答疑技能。用户问产品功能怎么用、设置在哪、导入导出、同步、会员、API 等使用问题时使用。只允许检索墨墨百科（memodocs.maimemo.com）、墨记论坛（markji.discourse.group），以及本机同级的 Memo 系列技能说明（与论坛同级，非官方）；都查不到就引导发邮件 support@markji.com，不凭记忆或推测作答。问 TXT 导入步骤时直接给内置固定教程，不检索。不用于制卡内容、卡片语法、OCR 或表格制作（分别走 memo-cardest、memo-mineruocr、memo-canvas）。
 metadata:
-  version: "1.0.10"
+  version: "1.0.11"
 ---
 
-# Memo-QAhelper v1.0.10
+# Memo-QAhelper v1.0.11
 
 墨墨记忆卡（Markji）**使用答疑**技能。调用名 `$memo-qahelper`，展示名「Memo-QAhelper」。
 
@@ -14,7 +14,7 @@ metadata:
 - 只允许三类来源：
   1. **墨墨百科**（`memodocs.maimemo.com`，官方）；
   2. **墨记论坛**（`markji.discourse.group`，用户反馈，非官方）；
-  3. **本机同级的 Memo 系列技能**（`../memo-cardest`、`../memo-txtimporter`、`../memo-canvas`、`../memo-mineruocr`、`../memo-ankitransfer`；自家维护说明，非官方）——**与论坛同级**。
+  3. **本机同级的 Memo 系列技能**（`../memo-cardest`、`../memo-txt`、`../memo-canvas`、`../memo-mineruocr`、`../memo-ankigo`；自家维护说明，非官方）——**与论坛同级**。
 - **其它来源一律不引用**：知乎、B 站、GitHub、博客、公众号、搜索引擎摘要、模型记忆，都不算依据。
 - 不凭记忆作答，不推测、不类比、不杜撰；三类来源都查不到就引导发邮件，流程结束。
 - Memo 技能只读文件，**不调用该技能**、不触发其 S0/提问/写入/API；与官方文档冲突时以官方为准，并说明差异。
@@ -26,7 +26,7 @@ metadata:
 
 - **问 TXT 导入**（「TXT 怎么导入」「从文本导入在哪」「批量制卡入口」）：直接走下方「固定答案：TXT 导入」，**不要检索**。
 - 是：功能怎么用、入口在哪、设置/同步/导入导出、会员、API、平台差异等 → 走下面的三档。
-- 不是：制卡内容、题型、卡片语法 → 交 `memo-cardest`；扫描件/OCR → `memo-mineruocr`；TXT 容器 → `memo-txtimporter`；表格 → `memo-canvas`。
+- 不是：制卡内容、题型、卡片语法 → 交 `memo-cardest`；扫描件/OCR → `memo-mineruocr`；TXT 容器 → `memo-txt`；表格 → `memo-canvas`。
 - 账号、支付、数据丢失、封禁等**只涉及个人账户**的问题：直接走第 ③ 档发邮件，不检索公开文档。
 
 ### 固定答案：TXT 导入（不检索）
@@ -89,7 +89,7 @@ site:markji.discourse.group <问题关键词>
 
 适用于制卡流程、TXT 容器/导入、表格渲染、OCR、Anki 迁移等与 Memo 系列能力直接相关的问题。产品版本差异先查 ② 论坛；系列内部流程/入口先查 ②b。
 
-- 只读同级目录的对应文件：`../memo-cardest/SKILL.md`、`../memo-txtimporter/SKILL.md`、`../memo-canvas/SKILL.md`、`../memo-mineruocr/SKILL.md`、`../memo-ankitransfer/SKILL.md`；需要细节再读其 `references/`。
+- 只读同级目录的对应文件：`../memo-cardest/SKILL.md`、`../memo-txt/SKILL.md`、`../memo-canvas/SKILL.md`、`../memo-mineruocr/SKILL.md`、`../memo-ankigo/SKILL.md`；需要细节再读其 `references/`。
 - **不要调用这些技能**（不加载 skill、不触发 S0/提问/API/写入），只按文件内容回答。
 - 对应技能未安装就跳过，不凭记忆补。
 - 标注 **据 Memo 系列技能说明（自家维护，非官方）**；与官方文档冲突时以官方为准，并说明差异。
